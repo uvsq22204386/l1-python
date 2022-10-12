@@ -28,7 +28,58 @@
 #print(nombre)
 
 
-nombre1=int(input())
-nombre2=int(input())
-if nombre1>=nombre2:
-    for i in range(1,nombre2)
+#nombre1=int(input())
+#nombre2=int(input())
+#if nombre1>=nombre2:
+#    for i in range(2,nombre2):
+#        if nombre1%i==0 and nombre2%i==0:
+#            print('le PGCD est',i)
+#else:
+#    for i in range(2,nombre1):
+#        if nombre1%i==0 and nombre2%i==0:
+#            print('le PGCD est',i)
+
+
+
+#a=int(input())
+#b=int(input())
+
+#if a>b:
+#    a,b=b,a
+#print(a,b)
+
+
+#from random import*
+#a=randint(10,99)
+#b=int(input())
+
+#if b>1 and a%b==0:
+#    print('diviseur')
+
+
+#var1=int(input())
+#var2=int(input())
+
+#if (var1>=0 and var2>=0) or (var1<0 and var2<=0):
+#    var1,var2=var2,var1
+#else:
+#    var1,var2=var1**var2,var1*var2
+#print(var1,var2)
+
+
+#n=int(input())
+#argent=0
+#for i in range(1,n+1):
+#    argent+=120+3*i
+#print(argent)
+
+
+from winreg import REG_NO_LAZY_FLUSH
+
+
+n=int(input())
+
+nombres=[]
+for i in range (1,11):
+    nombres.append(n-i)
+print(nombres)
