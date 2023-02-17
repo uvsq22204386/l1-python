@@ -99,11 +99,16 @@ def tempsEnDate(temps):
     return date
 
 
-
-def afficheDate(date):
-    return ("année :",date[0],"jour :",date[1],"heure :",date[2], "minute :",date[3],"seconde :",date[4])
     
+def afficheDate(date = -1):
+    if date!=-1:
+        print("\nannée :",date[0],"jour :",date[1],"heure :",date[2], "minute :",date[3],"seconde :",date[4])
+    else:
+        print("année : 1970",'jour : 1 ',"heure : 0","minute : 0","seconde : 0")
     
 temps = secondeEnTemps(1000000000)
+afficheTemps(temps)
+afficheDate(tempsEnDate(temps))
+afficheDate()
 
-afficheDate(tempsEnDate(afficheTemps(temps)))
+
